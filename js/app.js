@@ -50,7 +50,7 @@ UIcontroller = (function(dataCntr) {
 
     function printLeninSpeech () {
       speechText.innerHTML = dataCntr.publicGenerateLeninSpeech();
-      leninImage.innerHTML = '<img src="' + dataCntr.publicGenerateNewImage() + '" />';
+      leninImage.src = dataCntr.publicGenerateNewImage();
       handle = setTimeout(printLeninSpeech, 3000);
       leninAudio.play();
     }
@@ -58,7 +58,7 @@ UIcontroller = (function(dataCntr) {
     function clearLeninSpeech() {
       speechText.innerHTML = '';
       clearTimeout(handle);
-      leninImage.innerHTML = '<img src="https://www.sott.net/image/s10/209811/header/8876.jpg" />';
+      leninImage.src = "https://www.sott.net/image/s10/209811/header/8876.jpg";
       leninAudio.pause();
       ostanovitesAudio.volume = 0.2;
       ostanovitesAudio.play();
