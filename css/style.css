@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+background-image: url('../people.png');
+}
+
+.img-lenin {
+  content: '';
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.img-lenin img {
+  width: auto;
+  height: 100%;
+}
+
+button {
+  margin: 10px;
+  font-size: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+   color: inherit;
+}
+
+.speech-text {
+  width: 400px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+audio {
+  display: none;
+}
