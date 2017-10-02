@@ -1,6 +1,7 @@
 body {
   text-align: center;
-background-image: url('../people.png');
+  background-image: url('../people.png');
+  padding-top: 100px;
 }
 
 .img-lenin-div {
